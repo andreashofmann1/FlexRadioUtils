@@ -1,0 +1,32 @@
+﻿<Window x:Class="FlexUtils.FlexUtils"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:FlexUtils"
+        mc:Ignorable="d"
+        Title="FlexUtils" Height="187.81" Width="331.404">
+    <Grid>
+        <DockPanel VerticalAlignment="Center" Margin="10">
+            <StackPanel>
+            <TextBlock FontSize="16" x:Name="tbRadioDescription">Radio: -</TextBlock>
+            <TextBlock FontSize="16" x:Name="tbRadioDetails">Band/Ant: -</TextBlock>
+            <RadioButton x:Name="rbLow" Style="{StaticResource {x:Type ToggleButton}}" FontSize="16" Checked="OnChecked">
+                <RadioButton.Content>
+                    <TextBlock x:Name="tbLow">Low: -</TextBlock>
+                </RadioButton.Content>
+            </RadioButton>
+            <RadioButton x:Name="rbMid" Style="{StaticResource {x:Type ToggleButton}}" FontSize="16" Checked="OnChecked">
+                <RadioButton.Content>
+                    <TextBlock x:Name="tbMid">Mid: -</TextBlock>
+                </RadioButton.Content>
+            </RadioButton>
+            <RadioButton x:Name="rbHigh" Style="{StaticResource {x:Type ToggleButton}}" FontSize="16" Checked="OnChecked">
+                <RadioButton.Content>
+                    <TextBlock x:Name="tbHigh">High: -</TextBlock>
+                </RadioButton.Content>
+            </RadioButton>
+            </StackPanel>
+        </DockPanel>
+    </Grid>
+</Window>
